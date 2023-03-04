@@ -1,0 +1,48 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-healthcheckupissuer-dev-145946-authRole",
+      "UnauthRoleArn": "arn:aws:iam::991005209332:role/amplify-healthcheckupissuer-dev-145946-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::991005209332:role/amplify-healthcheckupissuer-dev-145946-authRole",
+      "Region": "ap-northeast-1",
+      "DeploymentBucketName": "amplify-healthcheckupissuer-dev-145946-deployment",
+      "UnauthRoleName": "amplify-healthcheckupissuer-dev-145946-unauthRole",
+      "StackName": "amplify-healthcheckupissuer-dev-145946",
+      "StackId": "arn:aws:cloudformation:ap-northeast-1:991005209332:stack/amplify-healthcheckupissuer-dev-145946/8d215330-5f2a-11ed-8853-0eb3a51d977b",
+      "AmplifyAppId": "d5s6mit30xrg6"
+    },
+    "categories": {
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "d5s6mit30xrg6",
+          "type": "cicd"
+        }
+      },
+      "function": {
+        "patientsFunc": {
+          "deploymentBucketName": "amplify-healthcheckupissuer-dev-145946-deployment",
+          "s3Key": "amplify-builds/patientsFunc-53636178647061563434-build.zip",
+          "frontendOrigin": "https://master.d5s6mit30xrg6.amplifyapp.com",
+          "queueUrl": "https://sqs.ap-northeast-1.amazonaws.com/991005209332/health-checkup-reception-queue"
+        },
+        "HCIssuerCreateInvFunc": {
+          "credDefId": "Vtw2qgmuMVy3rk2ipw7Vxt:3:CL:14:1.1",
+          "issuerDid": "Vtw2qgmuMVy3rk2ipw7Vxt",
+          "issuerEndpoint": "http://35.77.39.134:8071",
+          "schemaId": "Vtw2qgmuMVy3rk2ipw7Vxt:2:health_checkup_result:1.1",
+          "invForwardUrl": "https://153.122.173.14/issue.html?url=",
+          "queueUrl": "https://sqs.ap-northeast-1.amazonaws.com/991005209332/health-checkup-send-inv-queue",
+          "credentialCardUrl": "https://master.d5s6mit30xrg6.amplifyapp.com/medical_checkup_card.png"
+        },
+        "HCIssuerSendInvMailFunc": {
+          "issuerEmailTestAddress": "takahiro-kanuma@gmogshd.com",
+          "holderEmailTestAddress": "ringo-onishi@gmogshd.com"
+        },
+        "HealthCheckupIssuerConnecitonListener": {
+          "issuerEndpoint": "http://35.77.39.134:8071",
+          "credDefId": "Vtw2qgmuMVy3rk2ipw7Vxt:3:CL:8:1.4"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "lambdaLayers": [],
+  "environmentVariableList": [
+    {
+      "cloudFormationParameterName": "issuerEmailTestAddress",
+      "environmentVariableName": "ISSUER_EMAIL_TEST_ADDRESS"
+    },
+    {
+      "cloudFormationParameterName": "holderEmailTestAddress",
+      "environmentVariableName": "HOLDER_EMAIL_TEST_ADDRESS"
+    }
+  ],
+  "permissions": {
+    "storage": {
+      "patient": [
+        "create",
+        "read",
+        "update",
+        "delete"
+      ]
+    }
+  }
+}

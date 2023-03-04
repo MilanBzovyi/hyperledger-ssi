@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "paths": {
+    "/patients": {
+      "name": "/patients",
+      "lambdaFunction": "patientsFunc",
+      "permissions": {
+        "setting": "open"
+      }
+    },
+    "/topic/connections": {
+      "name": "/topic/connections",
+      "lambdaFunction": "HealthCheckupIssuerConnecitonListener",
+      "permissions": {
+        "setting": "open"
+      }
+    },
+    "/topic/issue_credential": {
+      "name": "/topic/issue_credential",
+      "lambdaFunction": "HealthCheckupIssuerCredentialListener",
+      "permissions": {
+        "setting": "open"
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "storage": {
+      "patient": [
+        "create",
+        "read",
+        "update",
+        "delete"
+      ]
+    }
+  },
+  "lambdaLayers": [],
+  "environmentVariableList": [
+    {
+      "cloudFormationParameterName": "frontendOrigin",
+      "environmentVariableName": "FRONTEND_ORIGIN"
+    },
+    {
+      "cloudFormationParameterName": "queueUrl",
+      "environmentVariableName": "QUEUE_URL"
+    }
+  ]
+}

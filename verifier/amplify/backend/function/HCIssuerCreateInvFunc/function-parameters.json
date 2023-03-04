@@ -1,0 +1,43 @@
+{
+  "lambdaLayers": [],
+  "environmentVariableList": [
+    {
+      "cloudFormationParameterName": "credDefId",
+      "environmentVariableName": "CRED_DEF_ID"
+    },
+    {
+      "cloudFormationParameterName": "issuerDid",
+      "environmentVariableName": "ISSUER_DID"
+    },
+    {
+      "cloudFormationParameterName": "issuerEndpoint",
+      "environmentVariableName": "ISSUER_ENDPOINT"
+    },
+    {
+      "cloudFormationParameterName": "schemaId",
+      "environmentVariableName": "SCHEMA_ID"
+    },
+    {
+      "cloudFormationParameterName": "invForwardUrl",
+      "environmentVariableName": "INV_FORWARD_URL"
+    },
+    {
+      "cloudFormationParameterName": "queueUrl",
+      "environmentVariableName": "QUEUE_URL"
+    },
+    {
+      "cloudFormationParameterName": "credentialCardUrl",
+      "environmentVariableName": "CREDENTIAL_CARD_URL"
+    }
+  ],
+  "permissions": {
+    "storage": {
+      "patient": [
+        "create",
+        "read",
+        "update",
+        "delete"
+      ]
+    }
+  }
+}

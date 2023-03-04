@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "storage": {
+      "patient": [
+        "create",
+        "read",
+        "update",
+        "delete"
+      ]
+    }
+  },
+  "lambdaLayers": [],
+  "environmentVariableList": [
+    {
+      "cloudFormationParameterName": "issuerEndpoint",
+      "environmentVariableName": "ISSUER_ENDPOINT"
+    },
+    {
+      "cloudFormationParameterName": "credDefId",
+      "environmentVariableName": "CRED_DEF_ID"
+    }
+  ]
+}
